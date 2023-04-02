@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Company Gazprom=new Company();
@@ -14,6 +16,13 @@ public class Main {
             Gazprom.hire(topmanager);
         }
         Gazprom.payBonuses();
+
+        ArrayList< Employee > Emin = new ArrayList< Employee >();
+        ArrayList< Employee > Emax = new ArrayList< Employee >();
+        Emin=Gazprom.getLowestSalaryStaff(5);
+        Emax=Gazprom.getTopSalaryStaff(5);
+
+
         int pause=0;
     }
 }
