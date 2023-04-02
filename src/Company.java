@@ -48,7 +48,7 @@ public class Company {
 
             for(Employee empl : Employees)
             {
-                if(empl.getClass()==Manager.class)
+                if(empl.getClass()==TopManager.class)
                 {
                    ((TopManager) empl).monthSalary=(int)(((TopManager) empl).monthSalary*2.5);
                 }

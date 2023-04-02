@@ -5,7 +5,7 @@ public class Main {
             Operator operator=new Operator();
             Gazprom.hire(operator);
         }
-        for (int i=0;i<80;i++){
+        for (int i=0;i<100;i++){
             Manager manager=new Manager();
             Gazprom.hire(manager);
         }
