@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db829a83-994d-4d9b-8874-06b9b06011cd" name="Changes" comment="2. Создайте два метода, возвращающие список указанной длины (count). Они должны содержать сотрудников, отсортированных по убыванию и возрастанию заработной платы:&#10;&#10;List&lt;Employee&gt; getTopSalaryStaff(int count),&#10;List&lt;Employee&gt; getLowestSalaryStaff(int count).">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="db829a83-994d-4d9b-8874-06b9b06011cd" name="Changes" comment=" gazprom" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,14 +69,22 @@
       <option name="project" value="LOCAL" />
       <updated>1680467938902</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" gazprom">
+      <created>1680468554626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680468554626</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Выполните задание в репозитории java_basics в проекте AbstractClasses/practice_1. Директория пустая, вам необходимо в ней создать новый проект и выполнить задание.&#10;&#10;1. Создайте класс компании Company, содержащей сотрудников и реализующей методы:&#10;&#10;найм одного сотрудника — hire(Employee employee),&#10;найм списка сотрудников – hireAll(Collection&lt;Employee&gt; employes),&#10;увольнение сотрудника – fire(Employee employee),&#10;получение значения дохода компании – getIncome().&#10;Каждый метод НЕ должен иметь модификатор static, это позволит каждому объекту класса Company иметь свой набора сотрудников, свой расчет дохода, увольнение и найм. Аргументы и возвращаемое значение методов выберите на основании логики работы вашего приложения.&#10;&#10;&#10;2. Создайте два метода, возвращающие список указанной длины (count). Они должны содержать сотрудников, отсортированных по убыванию и возрастанию заработной платы:&#10;&#10;List&lt;Employee&gt; getTopSalaryStaff(int count),&#10;List&lt;Employee&gt; getLowestSalaryStaff(int count).&#10;&#10;3. Создайте классы сотрудников с информацией о зарплатах и условиями начисления зарплаты:&#10;&#10;Manager — зарплата складывается из фиксированной части и бонуса в виде 5% от заработанных для компании денег. Количество заработанных денег для компании генерируйте случайным образом от 115 000 до 140 000 рублей.&#10;TopManager — зарплата складывается из фиксированной части и бонуса в виде 150% от заработной платы, если доход компании более 10 млн рублей.&#10;Operator — зарплата складывается только из фиксированной части.&#10;Каждый класс сотрудника должен имплементировать интерфейс Employee. В интерфейсе Employee должен быть объявлен метод, возвращающий зарплату сотрудника, — getMonthSalary().&#10;&#10;Аргументы и возвращаемое значение метода выберите в соответствии с логикой начисления зарплат. В интерфейсе объявите необходимые методы.&#10;Для демонстрации и тестирования работы ваших классов:&#10;&#10;Создайте и наймите в компанию: 180 операторов Operator, 80 менеджеров по продажам Manager, 10 топ-менеджеров TopManager.&#10;Распечатайте список из 10–15 самых высоких зарплат в компании.&#10;Распечатайте список из 30 самых низких зарплат в компании.&#10;Увольте 50% сотрудников.&#10;Распечатайте список из 10–15 самых высоких зарплат в компании.&#10;Распечатайте список из 30 самых низких зарплат в компании.&#10;&#10;&#10;Примеры вывода списка зарплат&#10;&#10;Список из пяти зарплат по убыванию:&#10;&#10;230 000 руб.&#10;178 000 руб.&#10;165 870 руб.&#10;123 000 руб.&#10;117 900 руб." />
     <MESSAGE value="Опечатка" />
     <MESSAGE value="2. Создайте два метода, возвращающие список указанной длины (count). Они должны содержать сотрудников, отсортированных по убыванию и возрастанию заработной платы:&#10;&#10;List&lt;Employee&gt; getTopSalaryStaff(int count),&#10;List&lt;Employee&gt; getLowestSalaryStaff(int count)." />
-    <option name="LAST_COMMIT_MESSAGE" value="2. Создайте два метода, возвращающие список указанной длины (count). Они должны содержать сотрудников, отсортированных по убыванию и возрастанию заработной платы:&#10;&#10;List&lt;Employee&gt; getTopSalaryStaff(int count),&#10;List&lt;Employee&gt; getLowestSalaryStaff(int count)." />
+    <MESSAGE value=" gazprom" />
+    <option name="LAST_COMMIT_MESSAGE" value=" gazprom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,10 +17,10 @@ public class Main {
         }
         gazprom.payBonuses();
 
-        ArrayList< Employee > Emin = new ArrayList< Employee >();
-        ArrayList< Employee > Emax = new ArrayList< Employee >();
-        Emin=gazprom.getLowestSalaryStaff(5);
-        Emax=gazprom.getTopSalaryStaff(5);
+        ArrayList< Employee > emin = new ArrayList< Employee >();
+        ArrayList< Employee > emax = new ArrayList< Employee >();
+        emin=gazprom.getLowestSalaryStaff(5);
+        emax=gazprom.getTopSalaryStaff(5);
 
 
         int pause=0;

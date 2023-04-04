@@ -3,11 +3,11 @@ import java.util.Collections;
 
 public class Company {
 
-    ArrayList<Employee> Employees = new ArrayList<Employee>();
+    ArrayList<Employee> employees = new ArrayList<Employee>();
     int profitCompany = 0;
 
     int getIncome() {
-        for (Employee empl : Employees) {
+        for (Employee empl : employees) {
             if (empl.getClass() == Manager.class) {
                 profitCompany += ((Manager) empl).profitForCompany;
             }
@@ -16,53 +16,53 @@ public class Company {
     }
 
     void hire(Employee employee) {
-        Employees.add(employee);
+        employees.add(employee);
     }
 
     void hireAll(ArrayList<Employee> employees) {
         for (Employee empl : employees) {
-            Employees.add(empl);
+            this.employees.add(empl);
         }
     }
 
     void fire() {
-        int eL = Employees.size();
+        int eL = employees.size();
         if (eL > 0) {
             int deleteEmp = (int) (Math.random() * (eL - 1));
-            Employees.remove(deleteEmp);
+            employees.remove(deleteEmp);
         }
     }
 
     ArrayList<Employee> getTopSalaryStaff(int count) {
-        if (count > 0 && count <= Employees.size()) {
-            Collections.sort(Employees, Employee::compareTo);
-            Collections.reverse(Employees);
+        if (count > 0 && count <= employees.size()) {
+            Collections.sort(employees, Employee::compareTo);
+            Collections.reverse(employees);
             //ArrayList<Employee> EmployeesR = new ArrayList<Employee>();
             //for (int i = 0; i < Employees.size(); i++) {
              //   EmployeesR.add(Employees.get(Employees.size() - 1 - i));
             //}
-            ArrayList<Employee> EmployeesMax = new ArrayList<Employee>();
+            ArrayList<Employee> employeesMax = new ArrayList<Employee>();
             for (int i = 0; i < count; i++) {
-                EmployeesMax.add(Employees.get(i));
+                employeesMax.add(employees.get(i));
             }
-            return EmployeesMax;
+            return employeesMax;
         } else {
-            ArrayList<Employee> EmployeesMax = new ArrayList<Employee>();
-            return EmployeesMax;
+            ArrayList<Employee> employeesMax = new ArrayList<Employee>();
+            return employeesMax;
         }
     }
 
     ArrayList<Employee> getLowestSalaryStaff(int count) {
-        if (count > 0 && count <= Employees.size()) {
-            Collections.sort(Employees, Employee::compareTo);
-            ArrayList<Employee> EmployeesMin = new ArrayList<Employee>();
+        if (count > 0 && count <= employees.size()) {
+            Collections.sort(employees, Employee::compareTo);
+            ArrayList<Employee> employeesMin = new ArrayList<Employee>();
             for (int i = 0; i < count; i++) {
-                EmployeesMin.add(Employees.get(i));
+                employeesMin.add(employees.get(i));
             }
-            return EmployeesMin;
+            return employeesMin;
         } else {
-            ArrayList<Employee> EmployeesMin = new ArrayList<Employee>();
-            return EmployeesMin;
+            ArrayList<Employee> employeesMin = new ArrayList<Employee>();
+            return employeesMin;
         }
     }
 
@@ -70,7 +70,7 @@ public class Company {
         getIncome();
         if (profitCompany > 10000000) {
 
-            for (Employee empl : Employees) {
+            for (Employee empl : employees) {
                 if (empl.getClass() == TopManager.class) {
                     ((TopManager) empl).monthSalary = (int) (((TopManager) empl).monthSalary * 2.5);
                 }
